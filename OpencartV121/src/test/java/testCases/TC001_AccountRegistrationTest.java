@@ -30,6 +30,8 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 		regpage.setLastName(randomeString().toUpperCase());
 		regpage.setEmail(randomeString()+"@gmail.com");// randomly generated the email
 		regpage.setTelephone(randomeNumber());
+		
+		Thread.sleep(2000);
 			
 		String password=randomeAlphaNumberic();
 			
@@ -38,6 +40,7 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 		
 		regpage.setPrivacyPolicy();
 		regpage.clickContinue();
+		Thread.sleep(2000);
 		
 		logger.info("Validating expected message..");
 		
